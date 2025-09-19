@@ -1,7 +1,7 @@
 #include <iostream>
 
 void ost(int numb){
-    std :: cout << "Введите количество остановок, пожалуйста!\n";
+    std :: cout << "Введите количество остановок, пожалуйста\n";
     int numb_of_stops;
     std :: cin >> numb_of_stops;
     int i = numb_of_stops - 1;
