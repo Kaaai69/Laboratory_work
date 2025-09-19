@@ -14,7 +14,7 @@ using byte_8 = unsigned char;
 int main(){
     cout << firstspace :: fisrt_a << endl;
     byte_8 ch;
-    cout << "Hi, guys\n";
+    cout << "Hi, guuuuys\n";
     return 0;
 
     
