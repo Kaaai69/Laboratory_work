@@ -19,7 +19,7 @@ void insertionSort(int arr[], int size){
 using std :: cout;
 int main()
 {
-    cout << "Работа с заполнением массива числами, введенными пользователем и вывод их на экран:\n";
+    cout << "Работа с заполнением массива числами, введенными пользователем и их вывод:\n";
     int len = 10;
     int array[len];
     for (int i = 0; i < len; i++){
