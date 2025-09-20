@@ -4,9 +4,11 @@ void ost(int numb){
     std :: cout << "Введите количество остановок, пожалуйста!!\n";
     int numb_of_stops;
     std :: cin >> numb_of_stops;
-    int i = numb_of_stops - 1;
-    for (i; i <= numb_of_stops; i++){
-        if (numb_of_stops == i){
+    for (int i = numb_of_stops; i <= numb_of_stops; i++){
+        if (numb_of_stops < 0){
+            std :: cout << "Не вводите ерунду\n";
+        }
+        else if (numb_of_stops == i){
             std :: cout << "Плата за проезд: " << i * 5 << std :: endl; 
         }
     }
