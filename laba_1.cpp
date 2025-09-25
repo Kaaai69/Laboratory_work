@@ -4,7 +4,7 @@ void ost(int numb){
     std :: cout << "Введите количество остановок, пожалуйста!!\n";
     int numb_of_stops;
     std :: cin >> numb_of_stops;
-    for (int i = numb_of_stops; i <= numb_of_stops; i++){
+    for (int i = numb_of_stops; i == numb_of_stops; i++){
         if (numb_of_stops < 0){
             std :: cout << "Не вводите ерунду\n";
         }

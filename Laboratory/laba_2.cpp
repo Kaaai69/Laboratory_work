@@ -16,23 +16,22 @@ void insertionSort(int arr[], int size){
 
 }
 }
-using std :: cout;
+using std::cout;
 int main()
 {
     cout << "Работа с заполнением массива числами, введенными пользователем и их вывод:\n";
     int len = 10;
     int array[len];
     for (int i = 0; i < len; i++){
-        cout << "Введите элемент: " << i + 1 << std :: endl;
-        std :: cin >> array[i];
+        cout << "Введите элемент: " << i + 1 << std::endl;
+        std::cin >> array[i];
     }
     cout << "\nЭлементы массива, введенные пользователем:\n";
     for (int el = 0; el < len; el++){
         cout << array[el] << " ";
 
     }
-    cout << "\n";
-    cout << "\nВывод суммы элементов массива и минимального числа:\n";
+    cout << "\n\nВывод суммы элементов массива и минимального числа:\n";
     int sum = 0;
     for (int j = 0; j < len; j++){
         sum += array[j];
