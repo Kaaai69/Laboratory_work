@@ -48,44 +48,53 @@ int main()
     std::istringstream iss(str);
     std::string word;
     std::vector<std::string> itog;
-    cout << "\nНаибольшие общие подстроки между соседними символами(при наличии таковой): ";
+    cout << "\nНаибольшая общая подстрока(при наличии таковой): ";
     while (iss >> word){
         absolut.push_back(word);
     }
-    for (int iter = 0; iter < 9; iter++){
-        //auto maxi = std::max_element(absolut.begin() + iter, absolut.begin() + iter + 1, [](const std::string& a, const std::string& b){return a.size() < b.size();});
-        //auto mini = std::min_element(absolut.begin() + iter, absolut.begin() + iter + 1, [](const std::string& a, const std::string& b){return a.size() > b.size();});
-        int lenn1 = absolut[iter].length();
-        int lenn2 = absolut[iter + 1].length();
-        std::string minim;
-        std::string maxim;
-        if (lenn1 > lenn2){
-            maxim = absolut[iter];
-            minim = absolut[iter + 1];
-        }
-        else {
-            maxim = absolut[iter + 1];
-            minim = absolut[iter];
-        } 
-        for (int i = 0; i < minim.length(); i++){
-            int lens = 1;
-            for (int j = i + 1; j < minim.length(); j++){
-                    std::string substring = minim.substr(i, j + 1);
-                    for (int u = 0; u < maxim.length(); u++){
-                        for (int a = i + 1; a < maxim.length(); a++){
-                            std::string substring1 = maxim.substr(u, a + 1);
-                            if (substring1 == substring and substring.length() > lens){
-                                std::string dad = std::to_string(iter + 1);
-                                lens = substring.length();
-                                itog.push_back(dad + " пара " + substring1 + ", ");
+    for (int iter1 = 0; iter1 < 9; iter1++){
+        for (int iter = iter1 + 1; iter < 9; iter++){
+            //auto maxi = std::max_element(absolut.begin() + iter, absolut.begin() + iter + 1, [](const std::string& a, const std::string& b){return a.size() < b.size();});
+            //auto mini = std::min_element(absolut.begin() + iter, absolut.begin() + iter + 1, [](const std::string& a, const std::string& b){return a.size() > b.size();});
+            int lenn1 = absolut[iter1].length();
+            int lenn2 = absolut[iter].length();
+            std::string minim;
+            std::string maxim;
+            if (lenn1 > lenn2){
+                maxim = absolut[iter1];
+                minim = absolut[iter];
+            }
+            else {
+                maxim = absolut[iter];
+                minim = absolut[iter1];
+            } 
+            for (int i = 0; i < minim.length(); i++){
+                int lens = 1;
+                for (int j = i + 1; j < minim.length(); j++){
+                        std::string substring = minim.substr(i, j + 1);
+                        for (int u = 0; u < maxim.length(); u++){
+                            for (int a = i + 1; a < maxim.length(); a++){
+                                std::string substring1 = maxim.substr(u, a + 1);
+                                if (substring1 == substring and substring.length() > lens){
+                                    std::string dad = std::to_string(iter + 1);
+                                    lens = substring.length();
+                                    itog.push_back(substring1);
+                                }
                             }
                         }
-                    }
-            }  
+                }  
+            }
         }
     }
-    cout << "\n";
-    for (std::string h : itog) cout << h << " ";
+    int maximus = 0;
+    std::string ended;
+    for (std::string h : itog) {
+        if (h.size() > maximus){
+            maximus = h.size();
+            ended = h;
+        }
+    }
+    cout << ended;
     cout << "\nКоличество слов, начинающихся с символа 'b': "<< cnt << std::endl;
     cout << "Длина самого длинного слова: "<< length << std::endl;
     cout << "Количество букв 'c' в третьем слове: " << enough << "\n";
