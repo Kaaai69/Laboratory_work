@@ -1,0 +1,17 @@
+mouse,200,25.
+keyboard,150,45.
+memory,500,65.
+router,130,75.
+headphones,180,85.
+harddrive,250,90.
+speakers,170,120.
+ssd,300,150.
+motherboard,70,220.
+printer,60,280.
+monitor,75,320.
+processor,85,400.
+tablet,90,450.
+camera,45,550.
+smartphone,120,650.
+graphicscard,40,780.
+laptop,50,1200.
