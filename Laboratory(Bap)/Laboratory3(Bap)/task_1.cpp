@@ -245,7 +245,7 @@ int main()
                 do {
                     std::string name_product;
                     int amount_of_product, price_product;
-                    cout << "Введите название товара: ";
+                    cout << "Введите название мяу мяу мяу: ";
                     std::getline(std::cin, name_product);
                     if (name_product.empty()){
                         break;
