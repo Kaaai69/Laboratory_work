@@ -1,0 +1,2 @@
+MotorA: measurements = 3, total = 4kWh, average = 1.33333kW
+PumpB: measurements = 2, total = 1.85kWh, average = 0.925kW

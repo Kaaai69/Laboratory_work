@@ -1,0 +1,1 @@
+size_t posiiton_word = line.find("герой");

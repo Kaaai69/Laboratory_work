@@ -1,0 +1,20 @@
+1,Apple,Fruits,1,100
+2,Banana,Fruits,0,150
+14,Beef,Meat,8,20
+4,Bread,Bakery,1,75
+9,Cheese,Dairy,4,40
+6,Chicken Meat,Meat,5,25
+20,Chocolate Snacks,Sweets,2,85
+17,Coffee,Beverages,7,35
+5,Eggs,Dairy,3,30
+3,Milk,Dairy,2,50
+16,Onion,Vegetables,0,110
+11,Orange Juice,Beverages,3,45
+10,Pasta,Groceries,1,100
+12,Potato,Vegetables,1,120
+7,Rice,Groceries,4,60
+18,Shampoo,Personal Care,6,40
+8,Tomato,Vegetables,2,80
+19,Toothpaste,Personal Care,3,60
+15,Water Bottle,Beverages,0,200
+13,Yogurt,Dairy,0,90

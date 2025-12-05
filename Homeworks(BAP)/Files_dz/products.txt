@@ -1,0 +1,20 @@
+1,Apple,Fruits,1.99,100
+2,Banana,Fruits,0.99,150
+3,Milk,Dairy,2.49,50
+4,Bread,Bakery,1.79,75
+5,Eggs,Dairy,3.99,30
+6,Chicken Meat,Meat,5.99,25
+7,Rice,Groceries,4.49,60
+8,Tomato,Vegetables,2.29,80
+9,Cheese,Dairy,4.79,40
+10,Pasta,Groceries,1.49,100
+11,Orange Juice,Beverages,3.29,45
+12,Potato,Vegetables,1.19,120
+13,Yogurt,Dairy,0.89,90
+14,Beef,Meat,8.99,20
+15,Water Bottle,Beverages,0.79,200
+16,Onion,Vegetables,0.99,110
+17,Coffee,Beverages,7.49,35
+18,Shampoo,Personal Care,6.99,40
+19,Toothpaste,Personal Care,3.49,60
+20,Chocolate Snacks,Sweets,2.99,85
