@@ -1,0 +1,3 @@
+/Users/a1111/Desktop/laba4/build/CMakeFiles/laba4.dir
+/Users/a1111/Desktop/laba4/build/CMakeFiles/edit_cache.dir
+/Users/a1111/Desktop/laba4/build/CMakeFiles/rebuild_cache.dir

@@ -1,0 +1,73 @@
+Fri Dec 12 05:42:13 2025 [SYSTEM] Database manager initialized
+Fri Dec 12 05:42:13 2025 [CONNECT] Successfully connected to database
+Fri Dec 12 05:42:13 2025 [INIT] Database schema created successfully
+Fri Dec 12 05:42:40 2025 [ERROR] Order 123 does not exist
+Fri Dec 12 05:42:54 2025 [ERROR] Get order failed: Order not found
+Fri Dec 12 05:43:07 2025 [READ] Retrieved 0 orders
+Fri Dec 12 05:43:30 2025 [CREATE_ORDER] Created order ID: 1
+Fri Dec 12 05:43:45 2025 [READ] Retrieved 1 orders
+Fri Dec 12 05:44:12 2025 [ERROR] Get items failed: Started new transaction while transaction was still active.
+Fri Dec 12 05:44:12 2025 [READ] Retrieved order ID: 1
+Fri Dec 12 05:44:34 2025 [ERROR] Product 900 does not exist or already in order
+Fri Dec 12 05:44:47 2025 [READ] Retrieved 1 orders
+Fri Dec 12 05:45:08 2025 [CREATE_ORDER] Created order ID: 2
+Fri Dec 12 05:45:40 2025 [ERROR] Product 0 does not exist or already in order
+Fri Dec 12 05:48:37 2025 [ERROR] Create product failed: ERROR:  column "product_type" of relation "products" does not exist
+LINE 1: INSERT INTO products (name, price, product_type) VALUES ('Co...
+                                           ^
+
+Fri Dec 12 05:49:11 2025 [ERROR] Get all products failed: ERROR:  column "product_type" does not exist
+LINE 1: SELECT id, name, price, product_type FROM products ORDER BY ...
+                                ^
+
+Fri Dec 12 05:49:17 2025 [ERROR] Get all products failed: ERROR:  column "product_type" does not exist
+LINE 1: SELECT id, name, price, product_type FROM products ORDER BY ...
+                                ^
+
+Fri Dec 12 05:49:52 2025 [ERROR] Create product failed: ERROR:  column "product_type" of relation "products" does not exist
+LINE 1: INSERT INTO products (name, price, product_type) VALUES ('Co...
+                                           ^
+
+Fri Dec 12 05:51:34 2025 [SYSTEM] Database manager shutdown
+Fri Dec 12 06:08:41 2025 [SYSTEM] Database manager initialized
+Fri Dec 12 06:08:41 2025 [CONNECT] Successfully connected to database
+Fri Dec 12 06:08:41 2025 [INIT] Database schema created successfully
+Fri Dec 12 06:09:06 2025 [CREATE_PRODUCT] Created product: Computer (ID: 1, Type: physical)
+Fri Dec 12 06:09:06 2025 [CREATE_PHYSICAL_PRODUCT] Computer (Weight: 5.000000kg, Dimensions: 10x20x30)
+Fri Dec 12 06:09:13 2025 [READ] Retrieved 1 products
+Fri Dec 12 06:09:31 2025 [CREATE_ORDER] Created order ID: 1
+Fri Dec 12 06:09:35 2025 [READ] Retrieved 1 orders
+Fri Dec 12 06:09:45 2025 [ERROR] Product 900 does not exist or already in order
+Fri Dec 12 06:12:12 2025 [ADD_ITEM] Added item ID 1 to order 1
+Fri Dec 12 06:12:19 2025 [ERROR] Get items failed: Started new transaction while transaction was still active.
+Fri Dec 12 06:12:19 2025 [READ] Retrieved order ID: 1
+Fri Dec 12 06:12:26 2025 [READ] Retrieved 1 orders
+Fri Dec 12 06:12:54 2025 [CREATE_ORDER] Created order ID: 2
+Fri Dec 12 06:13:27 2025 [CREATE_PRODUCT] Created product: Mouse (ID: 2, Type: physical)
+Fri Dec 12 06:13:27 2025 [CREATE_PHYSICAL_PRODUCT] Mouse (Weight: 4.500000kg, Dimensions: 10x20x30)
+Fri Dec 12 06:13:31 2025 [READ] Retrieved 2 products
+Fri Dec 12 06:13:46 2025 [ANALYTICS] Average order value: $8000.000000
+Fri Dec 12 06:23:38 2025 [ERROR] Get items failed: Started new transaction while transaction was still active.
+Fri Dec 12 06:23:38 2025 [READ] Retrieved order ID: 2
+Fri Dec 12 06:24:49 2025 [CREATE_PRODUCT] Created product: lolilop (ID: 3, Type: physical)
+Fri Dec 12 06:24:49 2025 [CREATE_PHYSICAL_PRODUCT] lolilop (Weight: 0.600000kg, Dimensions: 10x20x30)
+Fri Dec 12 06:24:54 2025 [READ] Retrieved 3 products
+Fri Dec 12 06:25:31 2025 [ERROR] Product 1 does not exist or already in order
+Fri Dec 12 08:35:10 2025 [CREATE_PRODUCT] Created product: Computer  (ID: 4, Type: physical)
+Fri Dec 12 08:35:10 2025 [CREATE_PHYSICAL_PRODUCT] Computer  (Weight: 7.800000kg, Dimensions: 10x20x30)
+Fri Dec 12 08:40:48 2025 [READ] Retrieved 4 products
+Fri Dec 12 09:41:29 2025 [READ] Retrieved 4 products
+Fri Dec 12 09:41:31 2025 [READ] Retrieved 4 products
+Fri Dec 12 09:41:42 2025 [READ] Retrieved 2 orders
+Fri Dec 12 09:42:12 2025 [READ] Retrieved 2 orders
+Fri Dec 12 09:42:26 2025 [SYSTEM] Database manager shutdown
+Fri Dec 12 09:42:31 2025 [SYSTEM] Database manager initialized
+Fri Dec 12 09:42:31 2025 [CONNECT] Successfully connected to database
+Fri Dec 12 09:42:31 2025 [INIT] Database schema created successfully
+Fri Dec 12 09:44:21 2025 [READ] Retrieved 4 products
+Fri Dec 12 11:40:29 2025 [READ] Retrieved 4 products
+Fri Dec 12 11:40:34 2025 [READ] Retrieved 4 products
+Fri Dec 12 11:40:57 2025 [CREATE_PRODUCT] Created product: ogogpgp (ID: 5, Type: physical)
+Fri Dec 12 11:40:57 2025 [CREATE_PHYSICAL_PRODUCT] ogogpgp (Weight: 56.000000kg, Dimensions: 10x20x30)
+Fri Dec 12 11:41:03 2025 [READ] Retrieved 5 products
+Fri Dec 12 21:19:06 2025 [SYSTEM] Database manager shutdown
