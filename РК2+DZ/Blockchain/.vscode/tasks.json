@@ -1,0 +1,21 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Build with OpenSSL",
+      "type": "shell",
+      "command": "clang++",
+      "args": [
+        "${file}",
+        "-I/opt/homebrew/opt/openssl/include",
+        "-L/opt/homebrew/opt/openssl/lib",
+        "-lssl",
+        "-lcrypto",
+        "-std=c++11",
+        "-o",
+        "${fileDirname}/${fileBasenameNoExtension}"
+      ],
+      "group": "build"
+    }
+  ]
+}
