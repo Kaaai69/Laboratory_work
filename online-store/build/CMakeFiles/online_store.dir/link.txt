@@ -1,0 +1,1 @@
+/usr/bin/c++  -arch arm64 -Wl,-search_paths_first -Wl,-headerpad_max_install_names -L/opt/homebrew/opt/libpq/lib CMakeFiles/online_store.dir/src/main.cpp.o CMakeFiles/online_store.dir/src/Users.cpp.o CMakeFiles/online_store.dir/src/Menu.cpp.o -o online_store  /opt/homebrew/opt/libpq/lib/libpq.dylib /opt/homebrew/Cellar/libpqxx/7.10.4/lib/libpqxx.dylib

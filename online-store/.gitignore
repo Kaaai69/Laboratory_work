@@ -1,0 +1,56 @@
+.DS_Store
+
+# Data
+data/
+*.csv
+*.parquet
+*.pkl
+*.pth
+*.h5
+
+# Environment
+.env
+.env.local
+*.env
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.pytest_cache/
+
+# Logs
+logs/
+*.log
+
+# Docker
+docker-compose.override.yml
+
+# Local DB / artifacts
+*.db
+*.sqlite
+*.sqlite3
+
+# Downloads / recordings
+recordings/
+*.mp3
+*.wav
+*.ogg
+*.m4a
+
+# Tokens / secrets (amoCRM)
+access_token.txt
+refresh_token.txt
+tokens.json
+*.token
+*.tokens
+
+# Virtualenv
+venv/
+.venv/
